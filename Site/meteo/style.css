@@ -1,0 +1,209 @@
+
+/* Styles pour les informations météo */
+#weatherInfo {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour le titre de la page */
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles pour les éléments météorologiques */
+#cityName, #temperature, #description {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.buttons {
+    margin: 10px;
+    text-align: center;
+}
+.buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Boutons de la carte */
+.map-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Espacement au-dessus et en dessous */
+}
+
+.map-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.map-buttons button:hover {
+    background-color: #1c7430;
+}
+
+/* Carte */
+#map {
+    height: 700px;
+    width: 80%;
+    margin: 0 auto; /* Centrer la carte */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Centrer la section météo */
+.weather-section {
+    text-align: center; /* Centre le texte pour les titres */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: flex-start; /* Commence l'alignement des éléments depuis le haut */
+}
+
+/* Styles pour les titres */
+.weather-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Espacement entre le titre et le champ de saisie */
+}
+
+/* Style pour l'input et le bouton */
+.weather-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Alignement des éléments à gauche */
+    align-items: center;
+    gap: 10px; /* Espacement entre l'input et le bouton */
+    margin-bottom: 20px;
+    width: 60%; /* Largeur de la section météo */
+    max-width: 600px; /* Largeur maximale */
+}
+
+.weather-input input {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    flex-grow: 1; /* Permet à l'input de prendre toute la place disponible */
+    margin-left: 10px; /* Un peu d'espace à gauche pour ne pas coller au bord */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.weather-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Couleur du bouton */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.weather-input button:hover {
+    background-color: #45a049;
+}
+
+/* Styles pour les informations météo */
+.weather-info {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center; /* Aligner les informations météo à gauche */
+    width: 60%; /* Largeur de la section météo */
+    max-width: 600px; /* Largeur maximale */
+}
+
+
+/* Ajouter des marges autour des éléments de la météo */
+.weather-info h2,
+.weather-info p {
+    margin: 5px 0;
+}
+
+/* Style générique pour les boutons */
+.styled {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Couleur de fond par défaut */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.styled:hover {
+    background-color: #45a049;
+}
+
+/* Enlever le style par défaut de l'input de type button */
+input[type="button"].styled {
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+input[type="button"].styled:hover {
+    background-color: #45a049;
+}
+
+
+#weatherTable, #forecastTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#weatherTable th, #forecastTable th, #weatherTable td, #forecastTable td {
+    padding: 10px;
+    text-align: center;
+    border: 3px solid #000000;
+}
+
+#weatherTable th, #forecastTable th {
+    background-color: #f2f2f2;
+}
+
+#forecastTable td img {
+    width: 30px;
+    height: 30px;
+}
+
+body{
+    background-color: rgb(0, 145, 145);
+}
+
+#titre{
+    background: linear-gradient(90deg, #56B4D3, #5d005d);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    max-width: calc(100% - 125px); /* Largeur ajustée */
+    padding: 10px;
+    margin: 25px auto; /* Centrer l'élément avec auto */
+    margin-left: 200px; /* Marge gauche */
+    margin-right: 200px; /* Marge droite */
+    border-radius: 50% 20% / 10% 90%;
+}
+
+#href{
+    margin-left: 50px;
+}

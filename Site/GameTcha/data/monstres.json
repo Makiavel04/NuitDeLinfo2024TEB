@@ -1,0 +1,19 @@
+[
+      {
+        "id": 1,
+        "image": "data/monstre1.svg"
+      },
+      {
+        "id": 2,
+        "image": "data/monstre2.svg"
+      },
+      {
+        "id": 3,
+        "image": "data/monstre3.svg"
+      },
+      {
+        "id": 4,
+        "image": "data/monstre4.svg"
+      }
+]
+  

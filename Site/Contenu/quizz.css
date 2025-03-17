@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #004d61;
+    background: linear-gradient(to bottom, #a2d9ff, #eaf9ff);
+}
+
+/* Styles pour le header */
+header {
+    background: #006994;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header a.menu {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header a.menu:hover {
+    color: #ffdd57;
+    transform: scale(1.1);
+}
+
+/* Contenu principal */
+#contenu {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 900px;
+    border: 1px solid #cce7f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #ffffff, #eaf9ff);
+}
+
+/* Pied de page */
+footer#piedBlog {
+    text-align: center;
+    background: #004d61;
+    color: #fff;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 2px solid #ffdd57;
+}
+
+footer#piedBlog p {
+    margin-bottom: 10px;
+    opacity: 0.85;
+}
+
+footer#piedBlog p:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Petits ajustements pour appareils mobiles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header a.menu {
+        margin: 10px 0;
+    }
+
+    #contenu {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+
+  #Quizz {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Fond translucide */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Style de la question */
+#question {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #006994;
+    text-shadow: 1px 1px 5px #000;
+    margin-bottom: 20px;
+}
+
+/* Réponses */
+.reponse {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 255, 0.1);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.reponse:hover {
+    background: rgba(0, 0, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Boutons radio */
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #4682B4; /* Couleur personnalisée pour les radios */
+}
+
+/* Bouton de soumission */
+#submit input[type="submit"] {
+    font-size: 1.2em;
+    background: #1E90FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#submit input[type="submit"]:hover {
+    background: #4682B4;
+    transform: scale(1.1);
+}
+
+/* Table - Représentation graphique */
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+}
+
+.clean {
+    background: linear-gradient(to bottom, #87CEEB 80%, #2e98d1 20%); /* Ciel bleu clair en haut, mer propre en bas */
+}
+
+/* Classe pour une mer sale */
+.dirty {
+    background: linear-gradient(to bottom, #87CEEB 80%, #0b9e6f 20%); /* Ciel bleu clair en haut, mer sale en bas */
+}
+
+.boat {
+    background: #4682B4;
+}
+
+.boat img {
+    width: 100%; /* Le bateau s'ajuste */
+    height: auto;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #Quizz {
+        width: 90%;
+    }
+
+    #question {
+        font-size: 1.2em;
+    }
+
+    .reponse {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #submit input[type="submit"] {
+        font-size: 1em;
+    }
+}
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

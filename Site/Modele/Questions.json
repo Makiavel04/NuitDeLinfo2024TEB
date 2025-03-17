@@ -1,0 +1,65 @@
+[
+    {
+        "question" : "Quelle est la vitesse d'augmentation de la montée des eaux ?",
+        "reponse1" : "3,5 mm/an en moyenne",
+        "reponse2" : "5 mm/an en moyenne",
+        "reponse3" : "1,8 mm/an en moyenne",
+        "reponse" : "3,5 mm/an en moyenne"
+    },
+    {
+        "question" : "À partir de combien de degrés la hausse de température de l'océan devient dangeureux",
+        "reponse1" : "2,3 degrés",
+        "reponse2" : "1,2 degré",
+        "reponse3" : "0,1 degré",
+        "reponse" : "0,1 degré"
+    },
+    {
+        "question" : "De combien de centimètre le niveau de la mer à Brest a augmenté depuis plus de 3 siècles ?",
+        "reponse1" : "23 cm",
+        "reponse2" : "18 cm",
+        "reponse3" : "30 cm",
+        "reponse" : "30 cm"
+    },
+    {
+        "question" : "Depuis 1992, de combien de centimètre le niveau de la mer augmente annuelement ?",
+        "reponse1" : "3 centimètres par an",
+        "reponse2" : "3 milimètres par an",
+        "reponse3" : "15 milimètres par an",
+        "reponse" : "30 cm"
+    },
+    {
+        "question" : "Comment a évolué l'acidification de l'océan depuis 1800",
+        "reponse1" : "-5%",
+        "reponse2" : "+26%",
+        "reponse3" : "+14%",
+        "reponse" : "+26%"
+    },
+    {
+        "question" : "En quoi les planctons nous sont vitaux ?",
+        "reponse1" : "Ils produisent plus de 50% de notre oxygène",
+        "reponse2" : "Ils sont présents dans la plupart des médicaments",
+        "reponse3" : "Ils sont régulent la chaîne alimentaire",
+        "reponse" : "Ils produisent plus de 50% de notre oxygène"
+    },
+    {
+        "question" : "La mer représente ... de la Terre",
+        "reponse1" : "89%",
+        "reponse2" : "97%",
+        "reponse3" : "93%",
+        "reponse" : "97%"
+    },
+    {
+        "question" : "L'ocean absorbe plus de ... de l’excès de chaleur accumulé dans le système climatique",
+        "reponse1" : "70%",
+        "reponse2" : "80%",
+        "reponse3" : "90%",
+        "reponse" : "90%"
+    },
+    {
+        "question" : "L'ocean absorbe plus de ... de l’excès de chaleur accumulé dans le système climatique",
+        "reponse1" : "70%",
+        "reponse2" : "80%",
+        "reponse3" : "90%",
+        "reponse" : "90%"
+    }
+]

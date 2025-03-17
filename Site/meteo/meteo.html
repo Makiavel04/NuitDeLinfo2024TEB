@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte et Météo de la France</title>
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Scripts -->
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="meteo.js"></script>
+</head>
+<body>
+    <!-- Section pour la météo -->
+    <div id="titre">
+        <h1>Météo en temps réel</h1>
+    </div>
+    <a href="../index.php" id="href">retour accueil</a>
+    <section class="weather-section">
+        <div class="weather-input">
+            <input type="text" id="city" placeholder="Entrez le nom d'une ville" />
+            <button class="styled" onclick="getWeather()">Obtenir la météo</button>
+        </div>
+        
+    </section>
+
+    <!-- Section pour la carte -->
+    <section class="map-section">
+        <h1>Carte de la France</h1>
+        <!-- Boutons pour changer la vue -->
+        <div class="map-buttons">
+            <input type="button" id="sans" class="styled" value="Sans divisions"/>
+            <input type="button" id="regions" class="styled" value="Régions"/>
+            <input type="button" id="departements" class="styled" value="Départements"/>
+        </div>
+        <!-- Div pour afficher la carte -->
+        <div id="map"></div>
+    </section>
+
+        <!-- Affichage des informations météo -->
+        <h3>En ce moment :</h3>
+        <table id="weatherTable">
+            <thead>
+                <tr>
+                    <th>Ville</th>
+                    <th>Météo</th>
+                    <th>Température</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="currentWeather">
+                    <td id="cityName"></td>
+                    <td id="weatherDescription"></td>
+                    <td id="temperature"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section pour les prévisions -->
+    <section class="forecast-section">
+        <h3>Prévisions pour les 5 prochains jours :</h3>
+        <table id="forecastTable">
+            <thead>
+                <tr>
+                    <th>Jour</th>
+                    <th>Météo</th>
+                    <th>Température</th>
+                </tr>
+            </thead>
+            <tbody id="forecastBody">
+                <!-- Les prévisions seront insérées ici -->
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

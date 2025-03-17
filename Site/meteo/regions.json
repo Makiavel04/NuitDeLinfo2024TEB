@@ -1,0 +1,23 @@
+{
+    "regions": [
+      {"name": "Île-de-France", "capital": "Paris"},
+      {"name": "Provence-Alpes-Côte d'Azur", "capital": "Marseille"},
+      {"name": "Bretagne", "capital": "Rennes"},
+      {"name": "Auvergne-Rhône-Alpes", "capital": "Lyon"},
+      {"name": "Bourgogne-Franche-Comté", "capital": "Dijon"},
+      {"name": "Centre-Val de Loire", "capital": "Orléans"},
+      {"name": "Grand Est", "capital": "Strasbourg"},
+      {"name": "Hauts-de-France", "capital": "Lille"},
+      {"name": "Normandie", "capital": "Rouen"},
+      {"name": "Nouvelle-Aquitaine", "capital": "Bordeaux"},
+      {"name": "Occitanie", "capital": "Toulouse"},
+      {"name": "Pays de la Loire", "capital": "Nantes"},
+      {"name": "Corse", "capital": "Ajaccio"},
+      {"name": "Guadeloupe", "capital": "Basse-Terre"},
+      {"name": "Guyane", "capital": "Cayenne"},
+      {"name": "La Réunion", "capital": "Saint-Denis"},
+      {"name": "Martinique", "capital": "Fort-de-France"},
+      {"name": "Mayotte", "capital": "Mamoudzou"}
+    ]
+  }
+  

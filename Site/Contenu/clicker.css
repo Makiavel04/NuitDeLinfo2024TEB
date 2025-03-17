@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1E90FF, #00BFFF, #87CEEB, #F0FFFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+  }
+#regle{
+    justify-content: left;
+    align-items: left;
+    /* background-color: red; */
+}
+a{
+    visibility: hidden;
+    color: red;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20vh;
+    text-transform: uppercase;
+    position: relative;
+    /* display: inline-block; */
+    animation: wave 2s infinite ease-in-out;
+  }
+  @keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(10px); }
+    75% { transform: translateY(-10px); }
+  }
+.containers{
+    position: relative;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 20px;
+    background: green;
+    padding: 40px 60;
+}
+h1 {
+    color: #333;
+}
+img{
+    width: 100px;
+}
+.item{
+    /* display: flex; */
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    width: 100px;
+    height: 100px;
+    transition: 0.25s;
+    transform: rotateY(180deg);
+    margin: auto;
+    margin-top: 50px;
+}
+.item:after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background : rgb(153, 159, 173);
+    transition: 0.25s; 
+    /* opacity: 0.85; */
+    transform: rotateY(0deg);
+    
+}
+.item.Open{
+    transform: rotateY(0deg);
+}
+.item.Match{
+    transform: rotateY(0deg);
+}
+.Open:after{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+} 
+.Match:after{
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+}
+#jeu {
+    /* background-color: red; */
+    /* width: 100px; */
+    display: grid;
+    flex-wrap: wrap;
+    gap:5px;
+    grid-template-areas:
+        'l1 l2 l3'
+        'l4 l5 l6'
+        'l7 l8 l9'
+        'l10 l11 l12';
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+}

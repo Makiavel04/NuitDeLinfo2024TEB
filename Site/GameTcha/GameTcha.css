@@ -1,0 +1,62 @@
+body, html {
+    background-color: rgb(95, 187, 197);
+    height: 100%;  /* Assurer que le body et html prennent toute la hauteur de la fenêtre */
+}
+canvas{
+    border:1px solid black;
+    width:500px;
+    height:300px;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 3em; /* Taille du texte */
+    color: #000000; /* Couleur du texte */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombre douce autour du texte */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Mettre en majuscules */
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em; /* Taille du texte */
+    color: #ffffff; /* Couleur du texte */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombre douce autour du texte */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Mettre en majuscules */
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2em; /* Taille du texte */
+    color: #000000; /* Couleur du texte */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombre douce autour du texte */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#gameArea{
+    display: flex; /* Active Flexbox pour aligner les enfants */
+    justify-content: space-between; /* Crée de l'espace entre les enfants */
+    align-items: center; /* Centre verticalement */
+}
+#target, #gameCanvas {
+    flex: 1;
+    margin: 10%;
+}
+
+#retour{
+    display: inline-block;
+    
+}

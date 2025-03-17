@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #004d61;
+    background: linear-gradient(to bottom, #a2d9ff, #eaf9ff);
+}
+
+/* Styles pour le header */
+header {
+    background: #006994;
+    color: #fff;
+    padding: 20px 40px; /* Plus de padding pour espacer le contenu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Espace entre les éléments du menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a.menu {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 15px; /* Espace interne pour agrandir la zone cliquable */
+    border-radius: 5px; /* Coins arrondis */
+    transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+}
+
+header a.menu:hover {
+    color: #ffdd57;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Contenu principal */
+#contenu {
+    padding: 30px; /* Plus d'espace autour du contenu */
+    background: #fff;
+    margin: 30px auto;
+    max-width: 900px;
+    border: 1px solid #cce7f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #ffffff, #eaf9ff);
+    line-height: 1.8; /* Espacement vertical pour le texte */
+}
+
+/* Pied de page */
+footer#piedBlog {
+    text-align: center;
+    background: #004d61;
+    color: #fff;
+    padding: 30px; /* Plus de padding */
+    font-size: 0.9rem;
+    border-top: 2px solid #ffdd57;
+    margin-top: 40px;
+}
+
+footer#piedBlog p {
+    margin-bottom: 15px;
+    opacity: 0.85;
+}
+
+footer#piedBlog p:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Petits ajustements pour appareils mobiles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px; /* Espacement réduit pour petits écrans */
+    }
+
+    header a.menu {
+        margin: 5px 0;
+        padding: 15px; /* Augmente la zone cliquable */
+    }
+
+    #contenu {
+        margin: 10px;
+        padding: 20px;
+    }
+}
